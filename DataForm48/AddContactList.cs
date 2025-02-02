@@ -1,4 +1,5 @@
-﻿using System;
+﻿//Application development in popular integrated development environments © 2023 by Myrsini Stasinou is licensed under CC-BY-4.0 
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,7 +20,7 @@ namespace DataForm48
 {
     public partial class AddContactList : Form
     {
-        MySqlConnection connectionDB = new MySqlConnection("datasource=localhost; port=3306; username=root; password=; database=contacts_form;");
+        MySqlConnection connectionDB = new MySqlConnection("datasource=localhost; port=3306; username=root; password=; database=contacts_form; SslMode=none;");
 
         public AddContactList()
         {

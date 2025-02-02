@@ -1,4 +1,4 @@
-﻿
+﻿//Application development in popular integrated development environments © 2023 by Myrsini Stasinou is licensed under CC-BY-4.0 
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,7 +18,7 @@ namespace DataForm48
 {
     public partial class ContactList : Form
     {
-        MySqlConnection connectionDB = new MySqlConnection("datasource=localhost; port=3306; username=root; password=; database=contacts_form;");
+        MySqlConnection connectionDB = new MySqlConnection("datasource=localhost; port=3306; username=root; password=; database=contacts_form; SslMode=none;");
  
         public ContactList()
         {
@@ -34,7 +34,6 @@ namespace DataForm48
 
         private void exportDataButton_Click(object sender, EventArgs e)
         {
-
             SaveFileDialog saveFile = new SaveFileDialog();
 
             saveFile.Filter = "Text File|*.txt";
